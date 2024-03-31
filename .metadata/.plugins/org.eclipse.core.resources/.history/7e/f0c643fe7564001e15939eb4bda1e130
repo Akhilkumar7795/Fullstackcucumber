@@ -1,0 +1,9 @@
+package com.academy;
+
+public class Test1 {
+
+	@Test
+	public void basic() {
+		System.out.println("hello");
+	}
+}

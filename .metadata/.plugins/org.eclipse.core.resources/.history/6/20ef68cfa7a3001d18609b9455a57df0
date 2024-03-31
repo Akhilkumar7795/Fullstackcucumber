@@ -1,0 +1,26 @@
+package com.academy;
+
+import java.util.Scanner;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+
+		int no =121;int rem;int rev=0;
+		int temp=no;
+		
+		while(temp!=0) {
+			
+			rem=temp%10;
+			temp=rev*10+rem;
+			no=temp/10;
+		}
+		System.out.println(no+ " " +no);
+		System.out.println(rev+ " " +rev);
+		if(no==rev)
+		{
+			System.out.println("No is a Palindrome");
+		}
+		System.out.println("Not a Palindrome");
+		}
+	}

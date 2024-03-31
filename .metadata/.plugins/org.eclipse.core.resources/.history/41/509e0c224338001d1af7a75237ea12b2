@@ -1,0 +1,13 @@
+package com.academy;
+
+public class ControlStatements {
+
+	public static void main(String[] args) {
+		int a =10;
+		int b = 10;
+		if(a==b)
+		{
+		System.out.println("hello");
+	}
+System.out.println("hi");
+}}

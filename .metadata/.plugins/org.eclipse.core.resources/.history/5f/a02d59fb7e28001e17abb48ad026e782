@@ -1,0 +1,22 @@
+package com.academy;
+
+class Test{
+	
+	void display(int a) {
+		System.out.println(1);
+	}
+	void display(char c) {
+		System.out.println(2);
+	}
+	
+}
+public class MethodOverLoading1 {
+
+	public static void main(String[] args) {
+		Test t = new Test();
+		t.display('d');
+		t.display(10);
+
+	}
+
+}

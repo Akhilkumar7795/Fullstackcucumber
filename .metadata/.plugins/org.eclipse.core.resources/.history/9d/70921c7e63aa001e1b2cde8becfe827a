@@ -1,0 +1,33 @@
+package Numberfour;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+import org.testng.annotations.Test;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
+import io.restassured.response.Response;
+
+public class ParsingJSONResponseData {
+
+	//in this class we are creating store json and storing all books in that
+	//now we need to fetch the particular value from the Json and validate
+	//ex in json we need to validate title of the book in all multiple array of objects 
+	//if in json there are multiple values so finding any required value out of it will be difficult and hence we use jsonpathfinder to fetch the required jsonpath
+	
+	@Test(priority=1)
+	public void jsonResponse() {
+		//Approach 1 [using jsonpathfinder]
+		given()
+		.contentType("ContentType.JSON")
+		.when()
+		.get("http://localhost:3000/store")
+		.then()     
+		.statusCode(200)
+		.header("Content-Type", "application/json; charset=utf-8") 
+		//we need to paste the json in jsonpathfinder and get the required json path from it 
+		.body("book[3].title", equalTo("The Lord of the Rings"));   //"book[3].title"[this is jsonpath] -- this we got from Jsonpathfinder 
+		
+		
+	}
+}

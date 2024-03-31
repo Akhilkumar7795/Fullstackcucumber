@@ -1,0 +1,13 @@
+import static java.lang.System.out;
+package com.academy;
+
+public class Sop {
+
+	public static void main(String[] args) {
+
+out.println("hi");
+out.println("hello");
+
+	}
+
+}

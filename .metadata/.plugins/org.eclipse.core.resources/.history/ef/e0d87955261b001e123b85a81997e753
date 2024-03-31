@@ -1,0 +1,12 @@
+package com.academy;
+
+public class Sop {
+
+	public static void main(String[] args) {
+
+System.out.println("hi");
+System.out.println("hello");
+
+	}
+
+}

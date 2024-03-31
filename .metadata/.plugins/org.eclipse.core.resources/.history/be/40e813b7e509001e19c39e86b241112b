@@ -1,0 +1,12 @@
+package com.academy;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+
+ int [] a = new int[26];
+ System.out.println(a.length);
+
+	}
+
+}

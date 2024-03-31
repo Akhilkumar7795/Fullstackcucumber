@@ -1,0 +1,23 @@
+package com.academy;
+
+
+
+class A{
+	void show1() {
+		System.out.println("1");
+}
+	 class B extends A {
+		void show2() {
+			System.out.println("2");
+		}
+	
+	
+public class MethodOverRiding {
+
+	public static void main(String[] args) {
+		A ob1= new A();
+		ob1.show1();
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.academy;
+
+
+
+class Fruit {
+    String getName() {
+        return "Generic Fruit";
+    }
+}
+
+class Apple extends Fruit {
+    @Override
+    String getName() {
+        return "Apple";
+    }
+}
+
+class Orange extends Fruit {
+    @Override
+    String getName() {
+        return "Orange";
+    }
+}
+
+public class MethodOverRiding {
+    public static void main(String[] args) {
+        Fruit fruit1 = new Apple();
+        System.out.println(fruit1.getName()); // Output: Apple
+
+        Fruit fruit2 = new Orange();
+        System.out.println(fruit2.getName()); // Output: Orange
+    }
+}
+
+	

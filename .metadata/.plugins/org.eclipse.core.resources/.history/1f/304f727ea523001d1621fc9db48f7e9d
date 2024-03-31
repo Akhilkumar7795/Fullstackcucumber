@@ -1,0 +1,14 @@
+package com.academy;
+
+public class TypeCasting {
+
+	public static void main(String[] args) {
+		
+		int i =30;
+			byte b = (byte) i;
+			System.out.println(b);
+			
+
+	}
+
+}

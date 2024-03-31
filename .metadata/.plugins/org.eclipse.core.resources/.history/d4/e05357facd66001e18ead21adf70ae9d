@@ -1,0 +1,28 @@
+package com.academy;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class StandAlone {
+
+	public static void main(String[] args) {
+		
+		ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--remote-allow-origins=*");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver(options);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get("https://rahulshettyacademy.com/client/auth/login");
+		driver.manage().window().maximize();
+		driver.findElement(By.id("userEmail")).sendKeys("akhilsallapalli22@gmail.com");
+		driver.findElement(By.id("userPassword")).sendKeys("Akhil@123");
+		driver.findElement(By.id("login")).click();
+
+	}
+
+}

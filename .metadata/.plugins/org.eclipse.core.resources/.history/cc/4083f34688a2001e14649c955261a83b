@@ -1,0 +1,17 @@
+package NumberTwo;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+//1)Post request body creation  using HashMap
+//2)Post request body creation  using org.JSON
+//3)Post request body creation  using POJO class
+//4)Post request body creation  using external file data
+
+public class waysToCreatePostRequestBody {
+	
+
+
+}

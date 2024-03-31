@@ -1,0 +1,22 @@
+package com.academy;
+
+
+class Bird{
+	void bucket(int a) {
+		System.out.println(a);
+	}
+}
+class Fly extends Fly{
+	void bucket(int a) {
+		System.out.println(a);
+	}
+}
+public class MethodOverRiding3 {
+
+	public static void main(String[] args) {
+		Bird b1=new Fly();
+		 b1.bucket(20);
+
+	}
+
+}

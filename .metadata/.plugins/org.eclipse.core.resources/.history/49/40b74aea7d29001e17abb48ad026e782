@@ -1,0 +1,23 @@
+package com.academy;
+
+
+
+class Akh{
+	void show1() {
+		System.out.println("1");
+}
+	public  class Bkh extends Akh {
+		void show1() {
+			System.out.println("2");
+		}
+	 }}
+	
+public class MethodOverRiding {
+
+	public static void main(String[] args) {
+		Akh ob1= new Akh();
+		ob1.show1();
+		
+	}
+
+}

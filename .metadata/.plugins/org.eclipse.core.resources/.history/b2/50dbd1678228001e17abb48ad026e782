@@ -1,0 +1,19 @@
+package com.academy;
+
+public class Method11 {
+
+	public static void main(String[] args)
+	{
+		System.out.println("1");
+		Method11 ob=new Method11();
+		int[] arr={10,20};
+		ob.main(arr);
+	}
+
+	public static void main(int[] args)
+	{
+		System.out.println("2");
+	}
+
+	}
+

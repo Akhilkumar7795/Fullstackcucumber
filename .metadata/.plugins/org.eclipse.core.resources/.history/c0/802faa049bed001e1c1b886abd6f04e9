@@ -1,0 +1,30 @@
+package Interviewprograms;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+
+import java.util.Iterator;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Stringreverse {
+
+public static void main(String[] args)  {
+
+	Scanner sc= new Scanner(System.in);
+	System.out.print("Enter the number:");
+	int n=sc.nextInt();	
+int i,j;
+for(i=1;i<=n;i++) {
+	for(j=1;j<=n;j++) {
+		System.out.print(j-1);
+	}
+	System.out.println();
+}
+
+}}

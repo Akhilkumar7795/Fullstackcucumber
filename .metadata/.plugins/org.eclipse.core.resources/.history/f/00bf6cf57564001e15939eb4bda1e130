@@ -1,0 +1,9 @@
+package com.academy;
+
+public class Test {
+
+	@Test
+	public void basic() {
+		
+	}
+}

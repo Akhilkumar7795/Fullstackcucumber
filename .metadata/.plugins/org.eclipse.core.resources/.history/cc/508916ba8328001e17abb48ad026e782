@@ -1,0 +1,23 @@
+package com.academy;
+
+
+
+	class Tes
+	{
+		Tes()
+		{
+			System.out.println("1");
+		}
+		Tes(int a)
+		{
+			System.out.println("2");
+		}
+	}
+	class Exam
+	{
+		public static void main(String[] args)
+		{
+			new Tes();
+			Tes t2=new Tes(10);
+		}
+	}
